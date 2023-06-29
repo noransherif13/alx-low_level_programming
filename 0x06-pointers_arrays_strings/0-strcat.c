@@ -1,7 +1,7 @@
 #define "main.h"
 
 /**
- * _strcat : - Function that concatenats two string
+ * _strcat  - Function that concatenats two string
  *
  * @dest: pointer to char parameter 1
  * @src: pointer to char parameter 2
