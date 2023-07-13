@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main -entry point
  *
- * prints alphabet in reverse
+ * Description : prints alphabet in reverse
+ * followed by a new line
  *
- * Return : always 0 (success)
+ * Return: always zero (success)
 */
 
 int main(void)
