@@ -2,14 +2,14 @@
 #include <stdlib.h>
 
 /**
- * strlen -returns length
+ * _strlen -returns length
  *
  * @str:input1
  *
  * Return: string length
 */
 
-int strlen(const char *str)
+int _strlen(const char *str)
 {
 	int length = 0;
 
@@ -20,13 +20,13 @@ int strlen(const char *str)
 }
 
 /**
- * strcopy -function
+ * _strcopy -function
  * @dest: parameter1
  * @src:parameter2
  * Return: ptr
 */
 
-char *strcopy(char *dest, char *src)
+char *_strcopy(char *dest, char *src)
 {
 	int i;
 
@@ -60,23 +60,23 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dog == NULL)
 		return (NULL);
 
-	dog->name = malloc(sizeof(char) * strlen(name) + 1);
-	if (dog->name == NULL)
+	dog->name = malloc(sizeof(char) * _strlen(name) + 1);
+	if ((*dog).name == NULL)
 	{
 		free(dog);
 		return (NULL);
 	}
-	dog->owner = malloc(sizeof(char) * strlen(owner) + 1);
-	if (dog->owner == NULL)
+	dog->owner = malloc(sizeof(char) * _strlen(owner) + 1);
+	if ((*dog).owner == NULL)
 	{
 		free(dog->name);
 		free(dog);
 		return (NULL);
 	}
 
-	dog->name = strcopy(dog->name, name);
+	dog->name = _strcopy(dog->name, name);
 	dog->age = age;
-	dog->owner = strcopy(dog->owner, owner);
+	dog->owner = _strcopy(dog->owner, owner);
 	return (dog);
 
 }
