@@ -1,6 +1,13 @@
 #include "dog.h"
 #include <stdio.h>
 
+/**
+ * print_dog -function
+ *
+ * @d: input
+ *
+ * Return: void
+*/
 void print_dog(struct dog *d)
 {
 	if (d)
