@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_dog -function
+ * print_dog - function
  *
  * @d: input
  *
